@@ -1,0 +1,30 @@
+\documentclass{book}
+\begin{document}
+
+
+%important packages 
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[square,sort&compress]{natbib}
+\usepackage{fancyhdr}\pagestyle{fancy}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+%frontmatter : half title, frontispeice, colophon (copyright page), title page, dedication, table of contents, preface, acknowledgements
+
+\include{frontmatter/half-title-frontispiece}
+\include{frontmatte/title}
+\include{frontmatte/colophon}
+\include{frontmatte/dedication}
+\tableofcontents
+\include{frontmatte/preface-ack}
+%mainmatter : parts and chapters 
+
+
+%backmatter : index, bibliography, postface, 
+\end{document}
