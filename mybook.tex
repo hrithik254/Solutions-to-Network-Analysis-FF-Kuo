@@ -7,7 +7,7 @@
 \usepackage{mathptmx}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry}
-\usepackage{graphicx}
+\usepackage{graphicx}\graphicspath{{graphics/}}
 \usepackage{setspace}
 \usepackage[square,sort&compress]{natbib}
 \usepackage{fancyhdr}\pagestyle{fancy}
@@ -17,6 +17,7 @@
 
 %frontmatter : half title, frontispeice, colophon (copyright page), title page, dedication, table of contents, preface, acknowledgements
 
+\frontmatter
 \include{frontmatter/half-title-frontispiece}
 \include{frontmatter/title}
 \include{frontmatter/colophon}
@@ -27,7 +28,7 @@
 
 %mainmatter : parts and chapters 
 
-
+\mainmatter
 \include{mainmatter/ch1}
 \include{mainmatter/ch2}
 \include{mainmatter/ch3}
@@ -44,6 +45,7 @@
 
 %backmatter : index, bibliography, postface, 
 
+\backmatter
 \include{backmatter/appendix1}
 \include{backmatter/appendix2}
 
