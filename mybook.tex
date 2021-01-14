@@ -18,13 +18,37 @@
 %frontmatter : half title, frontispeice, colophon (copyright page), title page, dedication, table of contents, preface, acknowledgements
 
 \include{frontmatter/half-title-frontispiece}
-\include{frontmatte/title}
-\include{frontmatte/colophon}
-\include{frontmatte/dedication}
+\include{frontmatter/title}
+\include{frontmatter/colophon}
+\include{frontmatter/dedication}
 \tableofcontents
-\include{frontmatte/preface-ack}
+\include{frontmatter/preface-ack}
+
+
 %mainmatter : parts and chapters 
 
 
+\include{mainmatter/ch1}
+\include{mainmatter/ch2}
+\include{mainmatter/ch3}
+\include{mainmatter/ch4}
+\include{mainmatter/ch5}
+\include{mainmatter/ch6}
+\include{mainmatter/ch7}
+\include{mainmatter/ch8}
+\include{mainmatter/ch9}
+\include{mainmatter/ch10}
+\include{mainmatter/ch11}
+\include{mainmatter/ch12}
+
+
 %backmatter : index, bibliography, postface, 
+
+\include{backmatter/appendix1}
+\include{backmatter/appendix2}
+
+\bibliography{backmatter/mybib}
+%\printindex
+\include{backmatter/postface}
+
 \end{document}
