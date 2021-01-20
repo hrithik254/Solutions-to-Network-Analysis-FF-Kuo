@@ -1,22 +1,26 @@
 \documentclass{book}
-\begin{document}
 
 
 %important packages 
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}%font encoding package 
+
 \usepackage{mathptmx}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry}
-\usepackage{graphicx}\graphicspath{{graphics/}}
+\usepackage{amsmath,amssymb,amsfonts} % helps in identifying math, for providing mathematical symbols, it provides several fonts 
+
+\usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry}%for setting margins (required since without it the text isnt centered)
+\usepackage{graphicx}\graphicspath{{graphics/}} %for adding images, we cannot add images otherwise
 \usepackage{setspace}
-\usepackage[square,sort&compress]{natbib}
-\usepackage{fancyhdr}\pagestyle{fancy}
-\usepackage{xcolor}
-\usepackage{booktabs}
-\usepackage{hyperref}
+\usepackage{natbib} % for bibliography
+\usepackage{fancyhdr}\pagestyle{fancy} % for good looking header and footer 
+\usepackage{xcolor}% for adding colour idk if its of use 
+\usepackage{booktabs}% for adding good looking tables 
+\usepackage{hyperref}%makes clickable links in toc
+\setcitestyle{numbers} % for setting citation style
 
-%frontmatter : half title, frontispeice, colophon (copyright page), title page, dedication, table of contents, preface, acknowledgements
+\begin{document}
 
+
+%frontmatter : half title, frontispeice, colophon (copyright page), title page, dedication, table of contents, preface, acknowledgement
 \frontmatter
 \include{frontmatter/half-title-frontispiece}
 \include{frontmatter/title}
@@ -29,6 +33,7 @@
 %mainmatter : parts and chapters 
 
 \mainmatter
+
 \include{mainmatter/ch1}
 \include{mainmatter/ch2}
 \include{mainmatter/ch3}
@@ -48,8 +53,6 @@
 \backmatter
 \include{backmatter/appendix1}
 \include{backmatter/appendix2}
-
-\bibliography{backmatter/mybib}
 %\printindex
 \include{backmatter/postface}
 
